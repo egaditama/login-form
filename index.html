@@ -12,14 +12,30 @@
     <main>
         <section>
             <h2>Login Form</h2>
-            <form>
-                <label for="username" id="username" name="username" required >Username</label>
-                <input type="username">
-                <label for="password" id="password" name="password" required>Password</label>
-                <input type="password">
+            <form id="loginForm" autocomplete="off">
+                <label for="username" >Username</label>
+                <input 
+                type="username"
+                id="username"
+                name="username"
+                placeholder="Enter username" 
+                required
+                >
+                
+                <label for="password" id="password" name="password">Password</label>
+                <input 
+                type="password"
+                id="password"
+                name="password" 
+                placeholder="Enter password" 
+                required
+                >
 
-                <button>Login</button>
-                <span>Don't have account? <a href="register.html">Click here</a></span>
+                <button type="submit">Login</button>
+
+                <p>Don't have account? <a href="register.html">Register here</a> </p>
+                
+                <p id="message"></p>
             </form>
                 
             
